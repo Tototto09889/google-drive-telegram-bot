@@ -23,7 +23,7 @@ class Messages:
 
     HELP_MSG = [
         ".",
-        "**Google Drive Uploader**\n__Aku bisa mengupload file dari direct link or telegram to your Google Drive. Kamu hanya perlu login dengan akun google drivemu kemudian kirim kepadaku direct link or file dari telegram.__\n\nAku punya fitur lain lhoo... ! Pengen tau ? Kalau emang pengen tau, kamu bisa klik tanda panah di bawah. Klik dengan hati-hati ya :).",
+        "**Google Drive Uploader**\n__Aku bisa mengupload file dari direct link or telegram ke dalam google drivemu. Kamu hanya perlu login dengan akun google drivemu kemudian kirim kepadaku direct link or file dari telegram.__\n\nAku punya fitur lain lhoo... ! Pengen tau ? Kalau emang pengen tau, kamu bisa klik tanda panah di bawah. Klik dengan hati-hati ya :).",
         
         f"**Login Google Drive**\n__Kirimkan padaku perintah /{BotCommands.Authorize[0]} dan kamu akan menerima URL, kunjungi URL tersebut dan kamu nanti akan mendapatkan kode, salin kode tersebut ke sini, langkah-langkah selesai dan akunmu sudah login. Gunakan perintah /{BotCommands.Revoke[0]} untuk logout akun google drivemu.__\n\n**Catatan: Aku tidak akan menjawab perintah atau pesan apapun (kecuali kamu menggunakan perintah /{BotCommands.Authorize[0]}) untuk login akunmu.\nJadi, login itu penting!**",
         
