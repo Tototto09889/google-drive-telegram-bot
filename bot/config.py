@@ -47,15 +47,15 @@ class Messages:
     
     COPIED_SUCCESSFULLY = "✅ **Salin Berhasil.**\n[{}]({}) __({})__"
     
-    NOT_AUTH = f"🔑 **You have not authenticated me to upload to any account.**\n__Send /{BotCommands.Authorize[0]} to authenticate.__"
+    NOT_AUTH = f"🔑 **Kamu belum login.**\n__Kirim perintah /{BotCommands.Authorize[0]} untuk login.__"
     
-    DOWNLOADED_SUCCESSFULLY = "📤 **Sedang Mengupload file...**\n**Filename:** ```{}```\n**Size:** ```{}```"
+    DOWNLOADED_SUCCESSFULLY = "📤 **Sedang Mengupload file...**\n**Nama File:** ```{}```\n**Ukuran:** ```{}```\n**Jenis File:** ```{}```"
     
     UPLOADED_SUCCESSFULLY = "✅ **Upload Berhasil.**\n[{}]({}) __({})__"
     
     DOWNLOAD_ERROR = "❗**Download Gagal**\n{}\n__Link - {}__"
     
-    DOWNLOADING = "📥 **Sedang Mendownload File...\nLink:** ```{}```"
+    DOWNLOADING = "📥 **Sedang Mendownload File...**\n**Nama File:** ```{}```\n**Ukuran:** ```{}```\n**Jenis File:** ```{}```"
     
     ALREADY_AUTH = "🔒 **Kamu Sudah Login.**\n__Gunakan /revoke untuk logout akunmu yang sekarang.__\n__Kirimkan padaku direct link atau file telegram untuk kuupload ke google drivemu__"
     
@@ -67,9 +67,9 @@ class Messages:
     
     AUTH_TEXT = "⛓️ **Untuk login akunmu, kamu bisa kunjungi [URL]({}) dan kirim kode tokennya ke sini.**\n__Caranya kunjungi URL > Berikan izin > kamu akan mendapatkan kode tokennya > salin kode tersebut > kirim ke sini__"
     
-    DOWNLOAD_TG_FILE = "📥 **Sedang Mendownload File...**\n**Filename:** ```{}```\n**Size:** ```{}```\n**MimeType:** ```{}```"
+    DOWNLOAD_TG_FILE = "📥 **Sedang Mendownload File...**\n**Nama File:** ```{}```\n**Ukuran:** ```{}```\n**Jenis File:** ```{}```"
     
-    PARENT_SET_SUCCESS = '🆔✅ **Custom Folder buat tempat upload sukses.**\n__Your custom folder id - {}\nUse__ ```/{} clear``` __to clear it.__'
+    PARENT_SET_SUCCESS = '🆔✅ **Custom Folder buat tempat upload sukses.**\n__Custom folder id milikmu - {}\nUse__ ```/{} clear``` __untuk menghapusnya.__'
     
     PARENT_CLEAR_SUCCESS = f'🆔🚮 **Custom Folder ID Berhasil Dihapus.**\n__Gunakan perintah__ ```/{BotCommands.SetFolder[0]} (Folder Link)``` __untuk mengaturnya ulang__.'
     
@@ -81,9 +81,9 @@ class Messages:
     
     CLONING = "🗂️ **Kloning Ke Google Drive...**\n__Link G-Drive - {}__"
     
-    PROVIDE_GDRIVE_URL = "**❗ Provide a valid Google Drive URL along with commmand.**\n__Usage - /{} (GDrive Link)__"
+    PROVIDE_GDRIVE_URL = "**❗ Berikan URL Google Drive yang valid bersamaan dengan perintah.**\n__Penggunaan - /{} (GDrive Link)__"
     
-    INSUFFICIENT_PERMISSONS = "❗ **You have insufficient permissions for this file.**\n__File id - {}__"
+    INSUFFICIENT_PERMISSONS = "❗ **Kamu tidak memiliki izin untuk file ini.**\n__File id - {}__"
     
     DELETED_SUCCESSFULLY = "🗑️✅ **Berhasil Menghapus File.**\n__Sekarang filemu sudah dihapus !\nFile id - {}__"
     
