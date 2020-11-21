@@ -4,7 +4,7 @@ class config:
     API_HASH = "f4a1af6d7688c41138ef4b3d8c8d9baa"
     DATABASE_URL = "postgres://fsviyeazqyqlze:26a43d6a31455de234bf6283323ad2f92ed6bdb6c62ab6a962b95bb96f1cdf14@ec2-3-220-222-72.compute-1.amazonaws.com:5432/d14g2fauml4n2r"
     SUDO_USERS = "1104560929 1238661140" # Sepearted by space.
-    SUPPORT_CHAT_LINK = "t.me/wibu12p"
+    SUPPORT_CHAT_LINK = "https://t.me/wibu12p"
     DOWNLOAD_DIRECTORY = "./downloads/"
 
 
@@ -19,24 +19,24 @@ class BotCommands:
   Ytdl = ['ytdl']
 
 class Messages:
-    START_MSG = "**Hi there {}.**\n__I'm Google Drive Uploader Bot.You can use me to upload any file / video to Google Drive from direct link or Telegram Files.__\n__You can know more from /help.__"
+    START_MSG = "**Hai kawan {}.**\n__Aku adalah Google Drive Uploader Bot.Kamu bisa menggunakanku untuk mengupload file / video ke Google Drive dari direct link or Telegram.__\n__Untuk informasi lebih lanjut, kamu bisa ketik perintah /help.__"
 
     HELP_MSG = [
         ".",
-        "**Google Drive Uploader**\n__I can upload files from direct link or Telegram Files to your Google Drive. All i need is to authenticate me to your Google Drive Account and send a direct download link or Telegram File.__\n\nI have more features... ! Wanna know about it ? Just walkthrough this tutorial and read the messages carefully.",
+        "**Google Drive Uploader**\n__Aku bisa mengupload file dari direct link or telegram to your Google Drive. Kamu hanya perlu login dengan akun google drivemu kemudian kirim kepadaku direct link or file dari telegram.__\n\nAku punya fitur lain lhoo... ! Pengen tau ? Kalau emang pengen tau, kamu bisa klik tanda panah di bawah. Klik dengan hati-hati ya :).",
         
-        f"**Authenticating Google Drive**\n__Send the /{BotCommands.Authorize[0]} commmand and you will receive a URL, visit URL and follow the steps and send the received code here. Use /{BotCommands.Revoke[0]} to revoke your currently logged Google Drive Account.__\n\n**Note: I will not listen to any command or message (except /{BotCommands.Authorize[0]} command) until you authorize me.\nSo, Authorization is mandatory !**",
+        f"**Login Google Drive**\n__Kirimkan padaku perintah /{BotCommands.Authorize[0]} dan kamu akan menerima URL, kunjungi URL tersebut dan kamu nanti akan mendapatkan kode, salin kode tersebut ke sini, langkah-langkah selesai dan akunmu sudah login. Gunakan perintah /{BotCommands.Revoke[0]} untuk logout akun google drivemu.__\n\n**Catatan: Aku tidak akan menjawab perintah atau pesan apapun (kecuali kamu menggunakan perintah /{BotCommands.Authorize[0]}) untuk login akunmu.\nJadi, login itu penting!**",
         
-        f"**Direct Links**\n__Send me a direct download link for a file and i will download it on my server and Upload it to your Google Drive Account. You can rename files before uploading to GDrive Account. Just send me the URL and new filename separated by ' | '.__\n\n**__Examples:__**\n```https://example.com/AFileWithDirectDownloadLink.mkv | New FileName.mkv```\n\n**Telegram Files**\n__To Upload telegram files in your Google drive Account just send me the file and i will download and upload it to your Google Drive Account. Note: Telegram Files Downloading are slow. it may take longer for big files.__\n\n**YouTube-DL Support**\n__Download files via youtube-dl.\nUse /{BotCommands.Ytdl[0]} (YouTube Link/YouTube-DL Supported site link)__",
+        f"**Direct Links**\n__Kirimkan padaku file dari direct download link, kemudian aku akan mendownloadnya ke serverku, dan menguploadnya ke akun google drivemu. kamu bisa mengganti nama filemu sebelum diupload. Caranya kirimkan padaku URLnya dan nama barunya dipisah dengan tanda ' | '.__\n\n**__Contoh:__**\n```https://example.com/AFileWithDirectDownloadLink.mkv | New FileName.mkv```\n\n**File dari telegram**\n__Untuk mengupload file dari telegram ke akun google drivemu, caranya cukup mudah. Teruskan file tersebut kepadaku, dan aku akan menguploadnya. Note: Kamu bisa spam file telegram sekaligus lho. Tapi mungkin ada beberapa file yg gagal, misalnya kamu mengirim 10 file sekaligus, mungkin 8 yg berhasil dan 2 yg gagal. Kamu bisa mengirim ulang file yg gagal tersebut dan aku akan menguploadnya.__\n\n**YouTube-DL Support**\n__Download file melalui youtube-dl.\nGunakan perintah /{BotCommands.Ytdl[0]} (YouTube Link/YouTube-DL Supported site link)__",
         
-        f"**Custom Folder for Upload**\n__Want to upload in custom folder or in__ **TeamDrive** __ ?\nUse /{BotCommands.SetFolder[0]} (Folder URL) to set custom upload folder.\nAll the files are uploaded in the custom folder you provide.__",
+        f"**Custom folder untuk tempat file diupload**\n__Pengen upload filenya ke dalam__ **team drive** __ ?\nGunakan perintah /{BotCommands.SetFolder[0]} (URL FOLDER DARI GOOGLE DRIVEMU) untuk mengatur tempat uploadmu.\nSemua file akan diupload ke dalam folder yang kamu pilih.__",
         
-        f"**Delete Google Drive Files**\n__Delete google drive files. Use /{BotCommands.Delete[0]} (File/Folder URL) to delete file.\nYou can also empty trash files use /{BotCommands.EmptyTrash[0]}\nNote: Files are deleted permanently. This process cannot be undone.\n\n**Copy Google Drive Files**\n__Yes, Clone or Copy Google Drive Files.\n__Use /{BotCommands.Clone[0]} (File id / Folder id or URL) to copy Google Drive Files in your Google Drive Account.__",
+        f"**Delete Google Drive Files**\n__Menghapus file google drive. Gunakan perintah /{BotCommands.Delete[0]} (File/Folder URL) untuk menghapus file.\nKamu juga dapat mengosongkan sampahmu dengan menggunakan perintah /{BotCommands.EmptyTrash[0]}\nNote: File akan dihapus secara permanen. Proses ini tidak bisa dibatalkan.\n\n**Copy Google Drive Files**\n__Yap, mengkloning  atau menyalin file google drive.\n__Gunakan perintah /{BotCommands.Clone[0]} (File id / Folder id or URL) untuk menyalin file google drive orang ke google drive milikmu.__",
         
-        "**Rules & Precautions**\n__1. Don't copy BIG Google Drive Files/Folders. It may hang the bot and your files maybe damaged.\n2. Send One request at a time unless bot will stop all processes.\n3. Don't send slow links @transload it first.\n4. Don't misuse, overload or abuse this free service.__",
+        "**Peraturan dan tindakan pencegahan**\n__1. Jangan menyalin file/folder google drive dengan jumlah yang besar. Itu mungkin akan menyebabkan filemu rusak atau membuat bot hang.\n2. Jangan mengirim link macam zippyshare, mega, solidfiles, dkk. Gunakan @transload untuk mengubah mereka menjadi direct link. Saya merekomendasikan http://aws.rapidleech.gq/ untuk mengubah linkmu menjadi direct link.\n3. Tolong jangan menyalahgunakan layanan gratis ini.__",
         
         # Dont remove this ↓ if you respect developer.
-        "**Developed by @viperadnan**"
+        "**Developed by @vcnmxd and @zxcxzcx**"
         ]
      
     RATE_LIMIT_EXCEEDED_MESSAGE = "❗ **Rate Limit Exceeded.**\n__User rate limit exceeded try after 24 hours.__"
