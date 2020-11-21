@@ -49,7 +49,7 @@ class Messages:
     
     NOT_AUTH = f"🔑 **Kamu belum login.**\n__Kirim perintah /{BotCommands.Authorize[0]} untuk login.__"
     
-    DOWNLOADED_SUCCESSFULLY = "📤 **Sedang Mengupload file...**\n**Filename:** ```{}```\n**Size:** ```{}```"
+    DOWNLOADED_SUCCESSFULLY = "📤 **Sedang Mengupload file...**\n**Nama File:** ```{}```\n**Ukuran:** ```{}```"
     
     UPLOADED_SUCCESSFULLY = "✅ **Upload Berhasil.**\n[{}]({}) __({})__"
     
@@ -67,7 +67,7 @@ class Messages:
     
     AUTH_TEXT = "⛓️ **Untuk login akunmu, kamu bisa kunjungi [URL]({}) dan kirim kode tokennya ke sini.**\n__Caranya kunjungi URL > Berikan izin > kamu akan mendapatkan kode tokennya > salin kode tersebut > kirim ke sini__"
     
-    DOWNLOAD_TG_FILE = "📥 **Sedang Mendownload File...**\n**Filename:** ```{}```\n**Size:** ```{}```\n**MimeType:** ```{}```"
+    DOWNLOAD_TG_FILE = "📥 **Sedang Mendownload File...**\n**Nama File:** ```{}```\n**Ukuran:** ```{}```\n**Jenis:** ```{}```"
     
     PARENT_SET_SUCCESS = '🆔✅ **Custom Folder buat tempat upload sukses.**\n__Custom folder id milikmu- {}\nGunakan perintah__ ```/{} clear``` __untuk menghapusnya.__'
     
