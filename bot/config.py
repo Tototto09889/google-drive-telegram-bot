@@ -49,7 +49,7 @@ class Messages:
     
     NOT_AUTH = f"🔑 **Kamu belum login.**\n__Kirim perintah /{BotCommands.Authorize[0]} untuk login.__"
     
-    DOWNLOADED_SUCCESSFULLY = "📤 **Sedang Mengupload file...**\n**Nama File:** ```{}```\n**Ukuran:** ```{}```\n**Jenis:** ```{}```\n**Progress:** ```{}```"
+    DOWNLOADED_SUCCESSFULLY = "📤 **Sedang Mengupload file...**\n**Nama File:** ```{}```\n**Ukuran:** ```{}```"
     
     UPLOADED_SUCCESSFULLY = "✅ **Upload Berhasil.**\n[{}]({}) __({})__"
     
