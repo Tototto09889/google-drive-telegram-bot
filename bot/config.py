@@ -19,7 +19,7 @@ class BotCommands:
   Ytdl = ['ytdl']
 
 class Messages:
-    START_MSG = "**Hai {}.**\n__Aku adalah Puuppuot.Kamu bisa menggunakanku untuk mengupload file / video dari direct link atau telegram ke Google Drive.__\n__Untuk informasi lebih lanjut, kamu bisa ketik perintah /help.__"
+    START_MSG = "**Hai {}.**\n__Aku adalah Puuppubot. Kamu bisa menggunakanku untuk mengupload file / video dari direct link atau telegram ke Google Drive.__\n__Untuk informasi lebih lanjut, kamu bisa ketik perintah /help.__"
 
     HELP_MSG = [
         ".",
